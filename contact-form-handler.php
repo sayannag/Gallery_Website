@@ -19,6 +19,6 @@
 	
 	$mail($to,$email_subject,$email_body,$headers);
 	
-	header("Location: contactform.html");
+	header("Location: index.html");
 	
 ?>
