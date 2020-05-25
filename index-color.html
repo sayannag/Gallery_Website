@@ -45,10 +45,15 @@ http://www.templatemo.com/tm-500-fluid-gallery
             else {
                 $('html').removeClass('gray');   
             }
+		
+	    function myFunctionFB(){
+	var x = document.URL;
+	document.getElementById("fb").src = 'https://www.facebook.com/plugins/share_button.php?href='+x+'&layout=button_count&size=large&mobile_iframe=true&width=83&height=28&appId';
+}
         </script>
 </head>
 
-    <body>
+    <body onload="myFunctionFB()">
         
         <!-- Content -->
         <div class="cd-hero">
@@ -837,6 +842,8 @@ http://www.templatemo.com/tm-500-fluid-gallery
                                                 
                                                 </form>  
                                             </div>
+						
+					    <iframe id = "fb" src = "" width = "83" height = "28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
                                             <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
                                                 <h2 class="tm-contact-info">Downtown Toronto, Ontario</h2>
